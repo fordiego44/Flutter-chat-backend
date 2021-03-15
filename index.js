@@ -37,6 +37,8 @@ app.use( express.static( publicPath ) ); //Ahora cuando se haga una peticion cua
 
 //Mis rutas
 app.use('/api/login', require('./routes/auth')) //2 parametros, El 1ero sera el path con el que llamaremos, 2do es elpath alque voy a responder
+app.use('/api/usuarios', require('./routes/usuarios')) //2 parametros, El 1ero sera el path con el que llamaremos, 2do es elpath alque voy a responder
+app.use('/api/mensajes', require('./routes/mensajes')) //2 parametros, El 1ero sera el path con el que llamaremos, 2do es elpath alque voy a responder
 
 
 
